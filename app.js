@@ -8,24 +8,13 @@ let minutes = 0;
 let hours = 0;
 
 
-
-
-
-
 function stopwatch() {
     if (second <= 60) {
-
-
         elemsecond.innerHTML = second.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
-
         second++;
-
-        elemsecond.classList.add('secondsrotate');
-        elemminute.style.transform = rotateX(`30deg`);
-
-
-
-    } else {
+    } 
+    
+    else {
         second = 0;
         minutes++;
     }
@@ -39,7 +28,6 @@ function stopwatch() {
     }
 
     elemhour.innerHTML = hours.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
-
 }
 
 
