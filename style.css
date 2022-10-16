@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url('digital-7.ttf');
+}
+
+body {
+    background-color: #ffff;
+    height: 100vh;
+    display: flex;
+    padding: 5px;
+}
+
+.container {
+
+    /* display: inline-block; */
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stopwatch {
+    width: fit-content;
+    height: 50px;
+}
+
+#hour {
+    background-color: black;
+    border-radius: 5px;
+    padding: 30px;
+    color: white;
+    font-family: 'digital-clock-font';
+    font-size: 1.5em;
+}
+
+
+
+#minutes {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 30px;
+    font-family: 'digital-clock-font';
+    font-size: 1.5em;
+}
+
+#seconds {
+    background-color: black;
+    border-radius: 5px;
+    padding: 30px;
+    color: white;
+    font-family: 'digital-clock-font';
+    font-size: 1.5em;
+}
+  
+
+.buttons {
+    width: 275px;
+    text-align: center;
+    margin-top: 10px
+}
+
+button {
+    width: 89px;
+    height: 22px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:550px) {
+    .stopwatch {
+        width: 100vw;
+        height: 50px;
+        text-align: center;
+    }
+}
